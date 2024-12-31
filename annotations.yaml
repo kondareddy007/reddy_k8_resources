@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: annotations
+    labels:
+       course: "Devops"
+       trainer: "Kondareddy"
+    annotations:
+       com.roboshop.tariner.duration: "120HRS"
+       jenkins.url: "http://www.jenkins.com/roboshop"
+
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+
+
+#kubectl apply -f labels.yaml
+#kubectl get pods 
+#kubectl describe pod labels

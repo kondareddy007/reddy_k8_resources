@@ -2,10 +2,22 @@ apiVersion: v1
 kind: Pod
 metadata:
     name: hello-pod
-
+    namespace: roboshop
 spec:
   containers:
   - name: hello-pod
     image: nginx
     ports:
     - containerPort: 80
+
+
+
+
+#kubectl apply -f pod.yaml
+#kubectl get pods
+# if you not mention any namespace it will create in default namespace.
+#kubectl get ns
+#kubectl apply -f pod.yaml
+#kubectl get pods  --> you will get error "No resources found in default namespace"
+#kubectl get pods -n roboshop --> Now no error. because you metion "namspace: roboshop" in pod.yaml 
+#kubernates pull images from dockerHub.

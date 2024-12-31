@@ -7,3 +7,5 @@ metadata:
 
 #kubectl create -f namespace.yaml
 #kubectl get namespaces    
+#kubectl apply -f namespace.yaml
+#

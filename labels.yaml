@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: labels
+    labels:
+       course: "Devops"
+       trainer: "Kondareddy"
+
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+
+
+#kubectl apply -f labels.yaml
+#kubectl get pods 
+#kubectl describe pod labels
